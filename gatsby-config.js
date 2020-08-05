@@ -16,6 +16,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-theme-ui`,
+    {
+      resolve: "gatsby-plugin-theme-ui",
+      options: {
+        prismPreset: "night-owl",
+        preset: "@theme-ui/preset-funk",
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
