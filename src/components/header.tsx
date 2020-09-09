@@ -24,7 +24,7 @@ const Header: React.FC = () => (
             textDecoration: `none`,
           }}
         >
-          cd /home
+          home
         </Link>
       </Text>
     </Box>
