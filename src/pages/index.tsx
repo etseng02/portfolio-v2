@@ -4,17 +4,23 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { Heading } from "rebass"
+import { Heading, Text, Flex } from "rebass"
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <Layout>
     <SEO title="Home" />
-    <Heading fontFamily="mono" fontSize={[5, 5, 5]}>
-      Hello, my name is Eddie Tseng
-    </Heading>
-    <Heading fontFamily="mono" fontSize={[3, 3, 3]}>
-      I make clacky noises on the keyboard
-    </Heading>
+    <Heading fontSize={[5, 6, 7]}>Eddie Tseng</Heading>
+    <Flex flexDirection="row">
+      <Heading fontSize={[3, 4, 5]} style={{ color: "#5fb3b3" }}>
+        &lt;
+      </Heading>
+      <Heading fontSize={[3, 4, 5]} style={{ color: "#FAC863" }}>
+        WebDeveloper
+      </Heading>
+      <Heading fontSize={[3, 4, 5]} style={{ color: "#5fb3b3" }}>
+        /&gt;
+      </Heading>
+    </Flex>
   </Layout>
 )
 
