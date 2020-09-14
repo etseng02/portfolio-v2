@@ -12,11 +12,7 @@ const Header = ({ setColorMode, colorMode }) => {
   const nextColorMode = colorMode === "blinding" ? "dark" : "blinding"
 
   return (
-    <Box
-      style={{
-        marginBottom: `1.45rem`,
-      }}
-    >
+    <Box mb="1.45rem">
       <Flex maxWidth={960} p="1.45rem 1.0875rem">
         <Link ml="auto" mr={0} variant="nav" href="/">
           Home
@@ -24,7 +20,17 @@ const Header = ({ setColorMode, colorMode }) => {
         <Link variant="nav" href="/">
           About Me
         </Link>
-        <Link variant="nav" onClick={() => setColorMode(nextColorMode)}>
+        <Link variant="nav" href="/">
+          Blog
+        </Link>
+        <Link variant="nav" href="/">
+          Tips and Tricks
+        </Link>
+        <Link
+          ml={1}
+          variant="themeSelector"
+          onClick={() => setColorMode(nextColorMode)}
+        >
           {capitalize(colorMode)} Mode
         </Link>
       </Flex>
