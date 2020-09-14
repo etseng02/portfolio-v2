@@ -1,4 +1,5 @@
 export default {
+  initialColorModeName: "dark",
   colors: {
     text: "hsl(210, 50%, 96%)",
     background: "hsl(230, 25%, 18%)",
@@ -8,7 +9,30 @@ export default {
     purple: "hsl(290, 100%, 80%)",
     muted: "hsla(230, 20%, 0%, 20%)",
     gray: "hsl(210, 50%, 60%)",
+    teal: "#5fb3b3",
+    yellow: "#FAC863",
+    black: "#2d3748",
+    modes: {
+      blinding: {
+        text: "#2d3748",
+        background: "#fff",
+        primary: "#2b6cb0",
+        primaryHover: "#2c5282",
+        secondary: "#718096",
+        muted: "#e2e8f0",
+        success: "#9ae6b4",
+        info: "#63b3ed",
+        warning: "#faf089",
+        danger: "#feb2b2",
+        light: "#f7fafc",
+        dark: "#2d3748",
+        textMuted: "#718096",
+      },
+    },
   },
+  // colors: {
+
+  // },
   fonts: {
     body:
       'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
@@ -40,6 +64,13 @@ export default {
     },
   },
   styles: {
+    a: {
+      color: "primary",
+      transition: "color .2s ease-out",
+      ":hover,:focus": {
+        color: "secondary",
+      },
+    },
     Container: {
       p: 3,
       maxWidth: 1024,
@@ -72,12 +103,12 @@ export default {
       variant: "textStyles.heading",
       fontSize: 1,
     },
-    a: {
-      color: "primary",
-      "&:hover": {
-        color: "secondary",
-      },
-    },
+    // a: {
+    //   color: "primary",
+    //   "&:hover": {
+    //     color: "secondary",
+    //   },
+    // },
     pre: {
       variant: "prism",
       fontFamily: "monospace",
@@ -146,6 +177,22 @@ export default {
     },
     ".selector,.attr-name,.string,.char,.bultin,.inserted": {
       color: "secondary",
+    },
+  },
+  variants: {
+    nav: {
+      display: "block",
+      px: 2,
+      py: 1,
+      color: "inherit",
+      textDecoration: "none",
+      fontSize: 1,
+      fontWeight: "bold",
+      transition: "color textDecoration .1s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+        textDecoration: "underline",
+      },
     },
   },
 }

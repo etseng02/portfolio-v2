@@ -12,13 +12,10 @@ import { PageProps, useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import { useColorMode } from "theme-ui"
 import { Box } from "rebass"
 
-interface Props {
-  children: any;
-}
-
-const Layout: React.FC<Props> = ({ children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,9 +26,10 @@ const Layout: React.FC<Props> = ({ children }) => {
     }
   `)
 
+  const [colorMode, setColorMode] = useColorMode()
+
   return (
     <>
-      <Header />
       <Box
         style={{
           margin: `0 auto`,
@@ -39,6 +37,11 @@ const Layout: React.FC<Props> = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          setColorMode={setColorMode}
+          colorMode={colorMode}
+        />
         <Box>{children}</Box>
         {/* <footer>
           © {new Date().getFullYear()}, Built with
