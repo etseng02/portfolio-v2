@@ -14,19 +14,20 @@ const Header = ({ setColorMode, colorMode }) => {
   return (
     <Box mb="1.45rem">
       <Flex maxWidth={960} p="1.45rem 1.0875rem">
-        <Link ml="auto" mr={0} variant="nav" href="/">
+        <Link fontSize={2} variant="nav" href="/">
           Home
         </Link>
-        <Link variant="nav" href="/">
+        <Link ml="auto" mr={0} fontSize={2} variant="nav" href="/">
           About Me
         </Link>
-        <Link variant="nav" href="/">
+        <Link fontSize={2} variant="nav" href="/">
           Blog
         </Link>
-        <Link variant="nav" href="/">
+        <Link fontSize={2} variant="nav" href="/">
           Tips and Tricks
         </Link>
         <Link
+          fontSize={2}
           ml={1}
           variant="themeSelector"
           onClick={() => setColorMode(nextColorMode)}

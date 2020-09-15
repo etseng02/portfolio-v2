@@ -3,7 +3,7 @@ export default {
   colors: {
     text: "hsl(210, 50%, 96%)",
     background: "hsl(230, 25%, 18%)",
-    primary: "hsl(217, 71%,  53%)",
+    primary: "#0cf",
     secondary: "hsl(0, 0%, 100%)",
     highlight: "hsl(260, 20%, 40%)",
     purple: "hsl(290, 100%, 80%)",
@@ -20,6 +20,7 @@ export default {
         primaryHover: "#2c5282",
         secondary: "#718096",
         muted: "#e2e8f0",
+        //muted:"#dce7f3 ",
         success: "#9ae6b4",
         info: "#63b3ed",
         warning: "#faf089",
