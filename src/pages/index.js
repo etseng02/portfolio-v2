@@ -11,6 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
 
     <Card
+      mb={[4, 3, 3]}
       mt={[2, 1, 1]}
       backgroundColor="muted"
       py={6}
@@ -19,7 +20,7 @@ const IndexPage = () => (
       pr={"15vw"}
       width="135vw"
     >
-      <Heading textDecoration="underline" color="text" fontSize={[5, 6, 6]}>
+      <Heading mb={2} color="text" fontSize={[5, 6, 6]}>
         Eddie Tseng
       </Heading>
       <Flex flexDirection="row">
@@ -37,6 +38,7 @@ const IndexPage = () => (
       </Heading> */}
       </Flex>
     </Card>
+    <Heading fontSize={[4, 5, 5]}>Projects</Heading>
   </Layout>
 )
 
