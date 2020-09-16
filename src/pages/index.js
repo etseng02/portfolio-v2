@@ -1,44 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import { Card, Heading, Text, Flex } from "rebass"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import { Box, Card, Heading, Flex } from "rebass"
+import Projects from "../components/Projects"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <Card
-      mb={[4, 3, 3]}
-      mt={[2, 1, 1]}
-      backgroundColor="muted"
-      py={6}
-      mx={"-30vw"}
-      pl={"32vw"}
-      pr={"15vw"}
-      width="135vw"
-    >
-      <Heading mb={2} color="text" fontSize={[5, 6, 6]}>
-        Eddie Tseng
-      </Heading>
-      <Flex flexDirection="row">
-        <Heading fontSize={[3, 4, 4]}>
-          Trying to make the web: fast, readable, and easy to navigate.
-        </Heading>
-        {/* <Heading fontSize={[3, 4, 5]} color="teal">
-        &lt;
-      </Heading>
-      <Heading fontSize={[3, 4, 5]} color="yellow">
-        WebDeveloper
-      </Heading>
-      <Heading fontSize={[3, 4, 5]} color="teal">
-        /&gt;
-      </Heading> */}
+    <Card backgroundColor="muted" py={[5, 6, 6]} mb={[3, 4, 4]}>
+      <Flex flexDirection="column" maxWidth="72rem" mx="auto">
+        <Box px="32px">
+          <Heading color="text" fontSize={[5, 6, 6]}>
+            Eddie Tseng
+          </Heading>
+          <Heading fontSize={[3, 4, 4]}>
+            Trying to make the web: fast, readable, and easy to navigate.
+          </Heading>
+        </Box>
       </Flex>
+      <Flex flexDirection="row"></Flex>
     </Card>
-    <Heading fontSize={[4, 5, 5]}>Projects</Heading>
+    <Projects />
   </Layout>
 )
 

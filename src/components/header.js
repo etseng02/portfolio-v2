@@ -2,7 +2,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { Flex, Text, Box, Link } from "rebass"
-import styled from "styled-components"
 
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1)
@@ -12,8 +11,8 @@ const Header = ({ setColorMode, colorMode }) => {
   const nextColorMode = colorMode === "blinding" ? "dark" : "blinding"
 
   return (
-    <Box>
-      <Flex p="1.45rem 1.0rem">
+    <Box py="1.45rem" px={[2, 4, 5]}>
+      <Flex>
         <Link fontSize={2} variant="nav" href="/">
           Home
         </Link>

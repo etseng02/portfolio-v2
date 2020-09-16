@@ -9,8 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { PageProps, useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./Header"
 
 import { useColorMode } from "theme-ui"
 import { Box } from "rebass"
@@ -33,8 +32,7 @@ const Layout = ({ children }) => {
       <Box
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          //maxWidth: ,
         }}
       >
         <Header

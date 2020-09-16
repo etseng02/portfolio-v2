@@ -217,5 +217,12 @@ export default {
         //textDecoration: "underline",
       },
     },
+    projectCard: {
+      border: "1px solid",
+      borderRadius: 4,
+      borderWidth: "1px",
+      borderColor: "text",
+      p: [1],
+    },
   },
 }
