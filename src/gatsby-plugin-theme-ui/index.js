@@ -31,9 +31,6 @@ export default {
       },
     },
   },
-  // colors: {
-
-  // },
   fonts: {
     body:
       'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
@@ -69,7 +66,7 @@ export default {
       color: "primary",
       transition: "color .2s ease-out",
       ":hover,:focus": {
-        color: "secondary",
+        color: "primary",
       },
     },
     Container: {
@@ -104,12 +101,6 @@ export default {
       variant: "textStyles.heading",
       fontSize: 1,
     },
-    // a: {
-    //   color: "primary",
-    //   "&:hover": {
-    //     color: "secondary",
-    //   },
-    // },
     pre: {
       variant: "prism",
       fontFamily: "monospace",
@@ -188,12 +179,11 @@ export default {
       py: 1,
       color: "inherit",
       textDecoration: "none",
-      fontSize: 1,
+      fontSize: 2,
       fontWeight: "bold",
       transition: "color .3s ease-out",
       ":hover,:focus": {
         color: "primary",
-        //textDecoration: "underline",
       },
     },
     themeSelector: {
@@ -201,8 +191,6 @@ export default {
       borderRadius: 4,
       borderWidth: "1px",
       borderColor: "text",
-      borderBottomWidth: 1,
-      //background: "red",
       cursor: "pointer",
       display: "block",
       px: 2,
@@ -214,7 +202,6 @@ export default {
       transition: "borderColor .3s ease-out,",
       ":hover,:focus": {
         borderColor: "primary",
-        //textDecoration: "underline",
       },
     },
     projectCard: {
@@ -222,7 +209,15 @@ export default {
       borderRadius: 4,
       borderWidth: "1px",
       borderColor: "text",
-      p: [1],
+      p: 1,
+    },
+    mediaIcons: {
+      color: "inherit",
+      cursor: "pointer",
+      transition: "color .3s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+      },
     },
   },
 }
