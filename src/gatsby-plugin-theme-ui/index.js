@@ -1,13 +1,35 @@
 export default {
+  initialColorModeName: "dark",
   colors: {
     text: "hsl(210, 50%, 96%)",
     background: "hsl(230, 25%, 18%)",
-    primary: "hsl(217, 71%,  53%)",
+    primary: "#0cf",
     secondary: "hsl(0, 0%, 100%)",
     highlight: "hsl(260, 20%, 40%)",
     purple: "hsl(290, 100%, 80%)",
     muted: "hsla(230, 20%, 0%, 20%)",
     gray: "hsl(210, 50%, 60%)",
+    teal: "#5fb3b3",
+    yellow: "#FAC863",
+    black: "#2d3748",
+    modes: {
+      blinding: {
+        text: "#2d3748",
+        background: "#fff",
+        primary: "#2b6cb0",
+        primaryHover: "#2c5282",
+        secondary: "#718096",
+        muted: "#e2e8f0",
+        //muted:"#dce7f3 ",
+        success: "#9ae6b4",
+        info: "#63b3ed",
+        warning: "#faf089",
+        danger: "#feb2b2",
+        light: "#f7fafc",
+        dark: "#2d3748",
+        textMuted: "#718096",
+      },
+    },
   },
   fonts: {
     body:
@@ -40,6 +62,13 @@ export default {
     },
   },
   styles: {
+    a: {
+      color: "primary",
+      transition: "color .2s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+      },
+    },
     Container: {
       p: 3,
       maxWidth: 1024,
@@ -71,12 +100,6 @@ export default {
     h6: {
       variant: "textStyles.heading",
       fontSize: 1,
-    },
-    a: {
-      color: "primary",
-      "&:hover": {
-        color: "secondary",
-      },
     },
     pre: {
       variant: "prism",
@@ -146,6 +169,55 @@ export default {
     },
     ".selector,.attr-name,.string,.char,.bultin,.inserted": {
       color: "secondary",
+    },
+  },
+  variants: {
+    nav: {
+      cursor: "pointer",
+      display: "block",
+      px: 2,
+      py: 1,
+      color: "inherit",
+      textDecoration: "none",
+      fontSize: 2,
+      fontWeight: "bold",
+      transition: "color .3s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+      },
+    },
+    themeSelector: {
+      border: "1px solid",
+      borderRadius: 4,
+      borderWidth: "1px",
+      borderColor: "text",
+      cursor: "pointer",
+      display: "block",
+      px: 2,
+      py: 1,
+      color: "inherit",
+      textDecoration: "none",
+      fontSize: 1,
+      fontWeight: "bold",
+      transition: "borderColor .3s ease-out,",
+      ":hover,:focus": {
+        borderColor: "primary",
+      },
+    },
+    projectCard: {
+      border: "1px solid",
+      borderRadius: 4,
+      borderWidth: "1px",
+      borderColor: "text",
+      p: 1,
+    },
+    mediaIcons: {
+      color: "inherit",
+      cursor: "pointer",
+      transition: "color .3s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+      },
     },
   },
 }
