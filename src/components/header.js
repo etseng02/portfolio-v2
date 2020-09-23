@@ -11,21 +11,21 @@ const Header = ({ setColorMode, colorMode }) => {
   const nextColorMode = colorMode === "blinding" ? "dark" : "blinding"
 
   return (
-    <Box py="1.45rem" px={[3, 4, 5]}>
+    <Box py="1.45rem" px={[4, 4, 5]}>
       <Flex>
         <Link variant="nav" href="/">
           Home
         </Link>
         <Box mr={0} ml="auto">
           <Flex>
-            <Link ml="auto" variant="nav" href="/">
+            <Link ml="auto" variant="nav" href="/about">
               About Me
             </Link>
             <Link ml="auto" variant="nav" href="/">
               Blog
             </Link>
             <Link variant="nav" href="/">
-              Writing
+              Stuff I love
             </Link>
             <Link
               fontSize={2}
