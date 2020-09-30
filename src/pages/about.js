@@ -27,19 +27,20 @@ const AboutPage = () => (
             </Heading>
           </Box>
         </Flex>
-        <Image
-          mx={[0, 0, 0]}
-          src={avatar}
-          sx={{
-            width: 150,
-            height: 150,
-            borderRadius: 9999,
-          }}
-        />
+        <Box mx={[0, "auto", "auto"]}>
+          <Image
+            src={avatar}
+            sx={{
+              width: 150,
+              height: 150,
+              borderRadius: 9999,
+            }}
+          />
+        </Box>
       </Flex>
       <Flex flexDirection="row"></Flex>
     </Card>
-    <Box maxWidth="800px" px="32px" margin="auto">
+    <Box maxWidth="800px" px="32px" mx="auto" mt={3}>
       <Text fontSize={[3, 3, 3]} mb={3}>
         I am a Toronto based full stack developer. I love solving interesting
         problems. Please do not hesitate to reach out if you think I can fit

@@ -1,8 +1,8 @@
 import { string } from "prop-types"
 import React from "react"
-import { Button, Box, Card, Flex, Heading, Image, Text } from "rebass"
+import { Button, Box, Card, Flex, Heading, Image, Text, Link } from "rebass"
 
-const Project = ({ title, description, image }) => {
+const Project = ({ title, description, image, websiteUrl }) => {
   return (
     <Box mb={4}>
       <Flex
@@ -17,7 +17,13 @@ const Project = ({ title, description, image }) => {
           width={["auto", "auto", "auto"]}
           mr={[0, 4, 4]}
         >
-          <Image src={image} />
+          <Image
+            src={image}
+            sx={{
+              maxWidth: 450,
+              maxHeight: 550,
+            }}
+          />
           <Box display={["block", "none", "none"]}>
             <Flex flexDirection="column">
               <Box>
@@ -36,8 +42,12 @@ const Project = ({ title, description, image }) => {
           <Flex flexDirection="column">
             <Box>
               <Heading>{title}</Heading>
-              <Text>{description}</Text>
-              <Button>Visit Website</Button>
+              <Text mb={2}>{description}</Text>
+              {websiteUrl && (
+                <Link href={websiteUrl}>
+                  <Button>Visit Website</Button>
+                </Link>
+              )}
             </Box>
           </Flex>
         </Box>
@@ -50,6 +60,7 @@ Project.propTypes = {
   title: string,
   description: string,
   image: string,
+  websiteUrl: string,
 }
 
 export default Project
