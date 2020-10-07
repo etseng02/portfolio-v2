@@ -7,7 +7,7 @@ import avatar from "../../public/static/eddie.png"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About" />
 
     <Card backgroundColor="muted" py={[4, 4, 5]} mb={[3, 4, 4]}>
       <Flex alignItems="center" maxWidth="800px" mx="auto">

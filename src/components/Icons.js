@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "rebass"
+import PropTypes from "prop-types"
 
 import { IconButton } from "theme-ui"
 
@@ -25,8 +26,12 @@ const LinkedinIcon = () => (
   </Link>
 )
 
-const GithubIcon = () => (
-  <Link variant="mediaIcons" href="https://github.com/etseng02" p={0}>
+const GithubIcon = ({ url }) => (
+  <Link
+    variant="mediaIcons"
+    href={url ? url : "https://github.com/etseng02"}
+    p={0}
+  >
     <IconButton>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -44,5 +49,9 @@ const GithubIcon = () => (
     </IconButton>
   </Link>
 )
+
+GithubIcon.propTypes = {
+  url: PropTypes.string,
+}
 
 export { LinkedinIcon, GithubIcon }

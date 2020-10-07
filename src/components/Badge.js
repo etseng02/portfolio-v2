@@ -1,7 +1,8 @@
 import React from "react"
 import { Box } from "rebass"
+import { string } from "prop-types"
 
-const Badge = () => (
+const Badge = ({ text }) => (
   <Box
     sx={{
       display: "inline-block",
@@ -12,8 +13,12 @@ const Badge = () => (
       borderRadius: 9999,
     }}
   >
-    Badge
+    {text}
   </Box>
 )
+
+Badge.propTypes = {
+  text: string,
+}
 
 export default Badge
