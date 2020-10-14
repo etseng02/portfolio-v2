@@ -16,10 +16,12 @@ export default {
       blinding: {
         text: "#2d3748",
         background: "#fff",
-        primary: "#2b6cb0",
+        //primary: "#2b6cb0",
+        primary: "#ff4154",
         primaryHover: "#2c5282",
-        secondary: "#718096",
-        muted: "#e2e8f0",
+        secondary: "hsl(210, 50%, 96%)",
+        muted: "#161e2e",
+        //muted: "#e2e8f0",
         //muted:"#dce7f3 ",
         success: "#9ae6b4",
         info: "#63b3ed",
@@ -58,6 +60,23 @@ export default {
       fontWeight: "display",
       letterSpacing: "-0.03em",
       mt: 3,
+    },
+  },
+  text: {
+    // mainHeading: {
+    //   display: "inline-block",
+    //   borderBottom: "solid",
+    //   borderWidth: ["4px", "6px", "6px"],
+    //borderWidth: "4px",
+    // borderColor: "primary",
+    //py: 2,
+    //color: "primary",
+    // },
+    underline: {
+      display: "inline-block",
+      borderBottom: "solid",
+      borderColor: "primary",
+      borderWidth: ["4px", "4px", "4px"],
     },
   },
   styles: {
@@ -211,7 +230,7 @@ export default {
       p: 1,
     },
     mediaIcons: {
-      color: "inherit",
+      //color: "secondary",
       cursor: "pointer",
       transition: "color .3s ease-out",
       ":hover,:focus": {

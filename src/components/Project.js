@@ -46,7 +46,7 @@ const Project = ({ title, description, image, websiteUrl, githubUrl }) => {
               <Heading>{title}</Heading>
               <Text mb={2}>{description}</Text>
               <Flex flexDirection="column">
-                {githubUrl && <GithubIcon url={githubUrl} />}
+                {githubUrl && <GithubIcon url={githubUrl} color="text" />}
                 {websiteUrl && (
                   <Link href={websiteUrl}>
                     <Button>Visit Website</Button>

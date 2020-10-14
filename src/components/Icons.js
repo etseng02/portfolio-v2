@@ -4,8 +4,13 @@ import PropTypes from "prop-types"
 
 import { IconButton } from "theme-ui"
 
-const LinkedinIcon = () => (
-  <Link variant="mediaIcons" href="https://ca.linkedin.com/in/eddietseng" p={0}>
+const LinkedinIcon = ({ color }) => (
+  <Link
+    variant="mediaIcons"
+    color={color ? color : "secondary"}
+    href="https://ca.linkedin.com/in/eddietseng"
+    p={0}
+  >
     <IconButton>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,11 +31,12 @@ const LinkedinIcon = () => (
   </Link>
 )
 
-const GithubIcon = ({ url }) => (
+const GithubIcon = ({ url, color }) => (
   <Link
     variant="mediaIcons"
     href={url ? url : "https://github.com/etseng02"}
     p={0}
+    color={color ? color : "secondary"}
   >
     <IconButton>
       <svg
@@ -50,8 +56,13 @@ const GithubIcon = ({ url }) => (
   </Link>
 )
 
+LinkedinIcon.propTypes = {
+  color: PropTypes.string,
+}
+
 GithubIcon.propTypes = {
   url: PropTypes.string,
+  color: PropTypes.string,
 }
 
 export { LinkedinIcon, GithubIcon }
