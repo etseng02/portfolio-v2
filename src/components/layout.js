@@ -32,6 +32,8 @@ const Layout = ({ children }) => {
       <Box
         style={{
           margin: `0 auto`,
+          backgroundPosition: "0 0, 50px 50px",
+          backgroundSize: "100px 100px",
           //maxWidth: ,
         }}
       >

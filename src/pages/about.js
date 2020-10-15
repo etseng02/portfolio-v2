@@ -7,22 +7,27 @@ import avatar from "../../public/static/eddie.png"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About" />
 
     <Card backgroundColor="muted" py={[4, 4, 5]} mb={[3, 4, 4]}>
       <Flex alignItems="center" maxWidth="800px" mx="auto">
         <Flex flexDirection="column">
           <Box px="32px">
-            <Heading color="text" fontSize={[4, 4, 5]}>
+            <Heading
+              color="secondary"
+              fontSize={[4, 4, 5]}
+              variant="underline"
+              mb={1}
+            >
               Hello.
             </Heading>
-            <Heading fontSize={[3, 3, 4]} mb={2}>
+            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
               My name is Eddie Tseng.
             </Heading>
-            <Heading fontSize={[3, 3, 4]} mb={2}>
+            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
               You visited my about page.
             </Heading>
-            <Heading fontSize={[3, 3, 4]} mb={2}>
+            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
               Prepare to read.
             </Heading>
           </Box>
