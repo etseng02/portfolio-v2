@@ -8,17 +8,16 @@ import skedoodle from "../../public/static/skedoodle.png"
 const ProjectList = () => {
   return (
     <>
-      <Box
-        //maxWidth="72rem"
-        // px="32px"
-        px={[4, 4, 5]}
-        //margin="auto"
+      <Heading
+        name="projectList"
+        className="element"
+        textAlign="center"
+        fontSize={[4, 5, 6]}
+        mb={[4, 4, 5]}
       >
-        {/* <Flex>
-          <Heading mb={[4, 4, 4]} fontSize={[4, 5, 5]} mx="auto">
-            Projects
-          </Heading>
-        </Flex> */}
+        Recent Projects
+      </Heading>
+      <Box px={[4, 4, 5]}>
         <Project
           title="Sudoku Solver"
           description="A sudoku solver designed so that users can input solvable sudokus and obtain the final answer."
