@@ -47,6 +47,7 @@ const IndexPage = () => (
             >
               <Box
                 sx={{
+                  borderRadius: 4,
                   border: "solid 1px",
                   padding: 3,
                   color: "secondary",

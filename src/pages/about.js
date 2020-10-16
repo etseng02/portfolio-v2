@@ -3,48 +3,15 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import { Box, Card, Heading, Flex, Text, Image } from "rebass"
-import avatar from "../../public/static/eddie.png"
+
+import AboutTitle from "../components/AboutTitle"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
 
-    <Card backgroundColor="muted" py={[4, 4, 5]} mb={[3, 4, 4]}>
-      <Flex alignItems="center" maxWidth="800px" mx="auto">
-        <Flex flexDirection="column">
-          <Box px="32px">
-            <Heading
-              color="secondary"
-              fontSize={[4, 4, 5]}
-              variant="underline"
-              mb={1}
-            >
-              Hello.
-            </Heading>
-            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
-              My name is Eddie Tseng.
-            </Heading>
-            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
-              You visited my about page.
-            </Heading>
-            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
-              Prepare to read.
-            </Heading>
-          </Box>
-        </Flex>
-        <Box mx={[0, "auto", "auto"]}>
-          <Image
-            src={avatar}
-            sx={{
-              width: 150,
-              height: 150,
-              borderRadius: 9999,
-            }}
-          />
-        </Box>
-      </Flex>
-      <Flex flexDirection="row"></Flex>
-    </Card>
+    <AboutTitle />
+
     <Box maxWidth="800px" px="32px" mx="auto" mt={3}>
       <Text fontSize={[3, 3, 3]} mb={3}>
         I am a Toronto based full stack developer. I love solving interesting
