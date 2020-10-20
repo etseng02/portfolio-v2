@@ -12,7 +12,7 @@ import { PageProps, useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 
 import { useColorMode } from "theme-ui"
-import { Box } from "rebass"
+import { Box, Link, Text } from "rebass"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           backgroundPosition: "0 0, 50px 50px",
           backgroundSize: "100px 100px",
-          //maxWidth: ,
+          //minHeight: "100vh",
         }}
       >
         <Header
@@ -42,12 +42,13 @@ const Layout = ({ children }) => {
           setColorMode={setColorMode}
           colorMode={colorMode}
         />
-        <Box>{children}</Box>
-        {/* <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer> */}
+        <Box minHeight="86vh">{children}</Box>
+        <Box my={3}>
+          <Text textAlign="center">
+            © {new Date().getFullYear()} Eddie Tseng |{" "}
+            <Link href="https://github.com/etseng02/portfolio-v2">Github</Link>
+          </Text>
+        </Box>
       </Box>
     </>
   )

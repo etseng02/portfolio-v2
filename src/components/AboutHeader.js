@@ -1,8 +1,8 @@
 import React from "react"
 import { Box, Heading, Flex, Image } from "rebass"
-import avatar from "../../public/static/eddie.png"
+import avatar from "../images/eddie.png"
 
-const AboutTitle = () => {
+const AboutHeader = () => {
   return (
     <Box backgroundColor="muted" py={[4, 4, 5]} mb={[3, 4, 4]}>
       <Flex alignItems="center" maxWidth="800px" mx="auto">
@@ -43,4 +43,4 @@ const AboutTitle = () => {
   )
 }
 
-export default AboutTitle
+export default AboutHeader

@@ -16,7 +16,6 @@ const Project = ({ title, description, image, websiteUrl, githubUrl }) => {
         <Card
           variant="projectCard"
           mr={[0, 4, 4]}
-          //mx={[0, "auto", "auto"]}
           width={["450px", "500px", "500px"]}
         >
           <Image
@@ -42,16 +41,20 @@ const Project = ({ title, description, image, websiteUrl, githubUrl }) => {
           display={["none", "flex", "flex"]}
         >
           <Flex flexDirection="column">
-            <Box>
+            <Box width="auto">
               <Heading>{title}</Heading>
               <Text mb={2}>{description}</Text>
               <Flex flexDirection="column">
-                {githubUrl && <GithubIcon url={githubUrl} color="text" />}
-                {websiteUrl && (
-                  <Link href={websiteUrl}>
-                    <Button>Visit Website</Button>
-                  </Link>
-                )}
+                <Box>
+                  {githubUrl && <GithubIcon url={githubUrl} color="text" />}
+                </Box>
+                <Box width="auto" alignSelf="center">
+                  {websiteUrl && (
+                    <Link href={websiteUrl} width="auto">
+                      <Button>Visit Website</Button>
+                    </Link>
+                  )}
+                </Box>
               </Flex>
             </Box>
           </Flex>

@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import { Box, Heading, Flex, Text } from "rebass"
+import { Box, Heading, Flex, Text, Button } from "rebass"
 import ProjectList from "../components/ProjectList"
 import { GithubIcon, LinkedinIcon } from "../components/Icons"
 import { Link } from "react-scroll"
@@ -30,7 +30,6 @@ const IndexPage = () => (
               Front End Developer, creating and designing content for human
               consumption.
             </Text>
-
             <LinkedinIcon />
             <GithubIcon />
           </Box>
@@ -45,17 +44,14 @@ const IndexPage = () => (
               offset={-70}
               duration={500}
             >
-              <Box
+              <Button
                 sx={{
-                  borderRadius: 4,
-                  border: "solid 1px",
-                  padding: 3,
+                  borderColor: "secondary",
                   color: "secondary",
-                  cursor: "pointer",
                 }}
               >
                 View my work
-              </Box>
+              </Button>
             </Link>
           </Box>
         </Flex>
