@@ -34,7 +34,6 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           backgroundPosition: "0 0, 50px 50px",
           backgroundSize: "100px 100px",
-          //minHeight: "100vh",
         }}
       >
         <Header
@@ -42,8 +41,9 @@ const Layout = ({ children }) => {
           setColorMode={setColorMode}
           colorMode={colorMode}
         />
-        <Box minHeight="86vh">{children}</Box>
-        <Box my={3}>
+        <Box minHeight="80vh">{children}</Box>
+
+        <Box my={4}>
           <Text textAlign="center">
             © {new Date().getFullYear()} Eddie Tseng |{" "}
             <Link href="https://github.com/etseng02/portfolio-v2">Github</Link>

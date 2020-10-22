@@ -19,7 +19,7 @@ const Header = ({ setColorMode, colorMode }) => {
         <Box mr={0} ml="auto">
           <Flex>
             <Link ml="auto" variant="nav" href="/about">
-              About Me
+              About
             </Link>
             <Link ml="auto" variant="nav" href="/blog">
               Blog

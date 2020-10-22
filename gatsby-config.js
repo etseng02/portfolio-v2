@@ -22,10 +22,7 @@ module.exports = {
         name: `Eddie Tseng`,
         short_name: `Eddie Tseng`,
         start_url: `/`,
-        background_color: "hsl(230, 25%, 18%)",
-        theme_color: "hsl(230, 25%, 18%)",
-        display: `minimal-ui`,
-        include_favicon: false,
+        icon: `src/images/eddie.png`,
       },
     },
     {

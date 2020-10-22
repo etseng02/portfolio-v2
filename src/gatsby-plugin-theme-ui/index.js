@@ -87,7 +87,7 @@ export default {
   },
   styles: {
     a: {
-      color: "primary",
+      color: "text",
       transition: "color .2s ease-out",
       ":hover,:focus": {
         color: "primary",
@@ -251,6 +251,13 @@ export default {
     mediaIcons: {
       cursor: "pointer",
       transition: "color .3s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+      },
+    },
+    link: {
+      color: "text",
+      transition: "color .2s ease-out",
       ":hover,:focus": {
         color: "primary",
       },
