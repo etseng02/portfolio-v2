@@ -13,7 +13,7 @@ export default {
     yellow: "#FAC863",
     black: "#2d3748",
     modes: {
-      blinding: {
+      light: {
         text: "#2d3748",
         background: "#fff",
         //primary: "#2b6cb0",
@@ -63,15 +63,6 @@ export default {
     },
   },
   text: {
-    // mainHeading: {
-    //   display: "inline-block",
-    //   borderBottom: "solid",
-    //   borderWidth: ["4px", "6px", "6px"],
-    //borderWidth: "4px",
-    // borderColor: "primary",
-    //py: 2,
-    //color: "primary",
-    // },
     underline: {
       display: "inline-block",
       borderBottom: "solid",
@@ -79,9 +70,24 @@ export default {
       borderWidth: ["4px", "4px", "4px"],
     },
   },
+  buttons: {
+    primary: {
+      backgroundColor: "transparent",
+      borderRadius: 4,
+      border: "solid 2px",
+      borderColor: "text",
+      padding: 3,
+      color: "text",
+      cursor: "pointer",
+      transition: "all 0.3s ease",
+      ":hover,:focus": {
+        borderColor: "primary",
+      },
+    },
+  },
   styles: {
     a: {
-      color: "primary",
+      color: "text",
       transition: "color .2s ease-out",
       ":hover,:focus": {
         color: "primary",
@@ -166,7 +172,10 @@ export default {
     hr: {
       border: 0,
       borderBottom: "1px solid",
-      borderColor: "muted",
+      borderColor: "text",
+      maxWidth: "800px",
+      textAlign: "center",
+      margin: "auto",
     },
     img: {
       maxWidth: "100%",
@@ -204,20 +213,30 @@ export default {
         color: "primary",
       },
     },
-    themeSelector: {
-      border: "1px solid",
-      borderRadius: 4,
-      borderWidth: "1px",
-      borderColor: "text",
-      cursor: "pointer",
-      display: "block",
+    navThemeSelector: {
+      ml: 1,
       px: 2,
       py: 1,
-      color: "inherit",
-      textDecoration: "none",
-      fontSize: 1,
+      fontSize: 2,
+      borderRadius: 4,
+      border: "solid 2px",
+      borderColor: "text",
+      color: "text",
+      cursor: "pointer",
       fontWeight: "bold",
-      transition: "borderColor .3s ease-out,",
+      transition: "all 0.3s ease",
+      ":hover,:focus": {
+        borderColor: "primary",
+      },
+    },
+    themeSelector: {
+      borderRadius: 4,
+      border: "solid 1px",
+      borderColor: "secondary",
+      color: "secondary",
+      cursor: "pointer",
+      fontWeight: "bold",
+      transition: "all 0.3s ease",
       ":hover,:focus": {
         borderColor: "primary",
       },
@@ -230,9 +249,15 @@ export default {
       p: 1,
     },
     mediaIcons: {
-      //color: "secondary",
       cursor: "pointer",
       transition: "color .3s ease-out",
+      ":hover,:focus": {
+        color: "primary",
+      },
+    },
+    link: {
+      color: "text",
+      transition: "color .2s ease-out",
       ":hover,:focus": {
         color: "primary",
       },

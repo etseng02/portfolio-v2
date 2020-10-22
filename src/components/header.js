@@ -8,7 +8,7 @@ const capitalize = string => {
 }
 
 const Header = ({ setColorMode, colorMode }) => {
-  const nextColorMode = colorMode === "blinding" ? "dark" : "blinding"
+  const nextColorMode = colorMode === "light" ? "dark" : "light"
 
   return (
     <Box py="1.45rem" px={[4, 4, 5]}>
@@ -19,18 +19,14 @@ const Header = ({ setColorMode, colorMode }) => {
         <Box mr={0} ml="auto">
           <Flex>
             <Link ml="auto" variant="nav" href="/about">
-              About Me
+              About
             </Link>
-            <Link ml="auto" variant="nav" href="/">
+            <Link ml="auto" variant="nav" href="/blog">
               Blog
-            </Link>
-            <Link variant="nav" href="/">
-              Stuff I love
             </Link>
             <Link
               fontSize={2}
-              ml={1}
-              variant="themeSelector"
+              variant="navThemeSelector"
               onClick={() => setColorMode(nextColorMode)}
             >
               {capitalize(colorMode)}

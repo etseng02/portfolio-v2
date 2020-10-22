@@ -1,9 +1,9 @@
 import React from "react"
-import { Box, Heading, Flex } from "rebass"
+import { Box, Heading } from "rebass"
 import Project from "./Project"
-import sudoku from "../../public/static/sudoku.png"
-import faceapp from "../../public/static/faceapp.png"
-import skedoodle from "../../public/static/skedoodle.png"
+import sudoku from "../images/sudoku.png"
+import faceapp from "../images/faceapp.png"
+import skedoodle from "../images/skedoodle.png"
 
 const ProjectList = () => {
   return (
