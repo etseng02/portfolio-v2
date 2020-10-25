@@ -11,12 +11,12 @@ const Project = ({ title, description, image, websiteUrl, githubUrl }) => {
         mx={["auto", 0, 0]}
         alignItems={["center", "none", "none"]}
         justifyContent={["center", "none", "none"]}
-        width={["400px", 1, 1]}
+        width={["auto", 1, 1]}
       >
         <Card
           variant="projectCard"
           mr={[0, 4, 4]}
-          width={["450px", "500px", "500px"]}
+          width={["auto", "500px", "500px"]}
         >
           <Image
             src={image}

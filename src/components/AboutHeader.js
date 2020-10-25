@@ -16,13 +16,13 @@ const AboutHeader = () => {
             >
               Hello.
             </Heading>
-            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
+            <Heading color="secondary" fontSize={[2, 3, 4]} mb={2}>
               My name is Eddie Tseng.
             </Heading>
-            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
+            <Heading color="secondary" fontSize={[2, 3, 4]} mb={2}>
               You visited my about page.
             </Heading>
-            <Heading color="secondary" fontSize={[3, 3, 4]} mb={2}>
+            <Heading color="secondary" fontSize={[2, 3, 4]} mb={2}>
               Prepare to read.
             </Heading>
           </Box>
@@ -31,8 +31,8 @@ const AboutHeader = () => {
           <Image
             src={avatar}
             sx={{
-              width: 150,
-              height: 150,
+              width: [100, 150, 150],
+              height: [100, 150, 150],
               borderRadius: 9999,
             }}
           />
