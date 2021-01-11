@@ -9,11 +9,16 @@ import { Link } from "react-scroll"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
 
     <Box height={["auto", "95vh", "95vh"]}>
       <Box backgroundColor="muted" py={[5, 5, 6]} mb={[4, 4, 4]}>
-        <Flex flexDirection="column" maxWidth="50rem" mx="auto">
+        <Flex
+          flexDirection="column"
+          maxWidth="50rem"
+          mx="auto"
+          alignItems="center"
+        >
           <Box
             ml={[4, 4, 0]}
             px={[3, 4, 4]}
@@ -27,8 +32,7 @@ const IndexPage = () => (
               Eddie Tseng
             </Heading>
             <Text fontSize={[2, 3, 4]} mb={2} color="secondary">
-              Front End Developer, creating and designing content for human
-              consumption.
+              Front End Developer, creating and designing content for humans.
             </Text>
             <LinkedinIcon />
             <GithubIcon />
