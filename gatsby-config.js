@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Eddie Tseng`,
-    description: `Front End Developer, creating and designing content for human consumption.`,
+    description: `Front End Developer, creating and designing content for humans.`,
     author: `Eddie Tseng`,
+    image: "src/images/eddie.png",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
