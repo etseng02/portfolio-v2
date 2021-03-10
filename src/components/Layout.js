@@ -12,7 +12,7 @@ import { PageProps, useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 
 import { useColorMode } from "theme-ui"
-import { Box, Link, Text } from "rebass"
+import { Box, Flex, Link, Text } from "rebass"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,19 +36,23 @@ const Layout = ({ children }) => {
           backgroundSize: "100px 100px",
         }}
       >
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          setColorMode={setColorMode}
-          colorMode={colorMode}
-        />
-        <Box minHeight="80vh">{children}</Box>
+        <Flex flexDirection="column" minHeight="100vh">
+          <Header
+            siteTitle={data.site.siteMetadata.title}
+            setColorMode={setColorMode}
+            colorMode={colorMode}
+          />
+          <Box>{children}</Box>
 
-        <Box my={4}>
-          <Text textAlign="center">
-            © {new Date().getFullYear()} Eddie Tseng |{" "}
-            <Link href="https://github.com/etseng02/portfolio-v2">Github</Link>
-          </Text>
-        </Box>
+          <Box mb={3} mt="auto">
+            <Text textAlign="center">
+              © {new Date().getFullYear()} Eddie Tseng |{" "}
+              <Link href="https://github.com/etseng02/portfolio-v2">
+                Github
+              </Link>
+            </Text>
+          </Box>
+        </Flex>
       </Box>
     </>
   )
