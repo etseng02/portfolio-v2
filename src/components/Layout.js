@@ -42,9 +42,11 @@ const Layout = ({ children }) => {
             setColorMode={setColorMode}
             colorMode={colorMode}
           />
-          <Box>{children}</Box>
+          <Flex flexDirection="column" flexGrow={1}>
+            {children}
+          </Flex>
 
-          <Box mb={3} mt="auto">
+          <Box mb={3}>
             <Text textAlign="center">
               © {new Date().getFullYear()} Eddie Tseng |{" "}
               <Link href="https://github.com/etseng02/portfolio-v2">

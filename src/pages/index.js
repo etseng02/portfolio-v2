@@ -10,6 +10,23 @@ const IndexPage = () => (
   <Layout>
     <SEO />
 
+    {/* <Box height="100%">
+      <Flex>
+        <Box mx="auto" my="auto">
+          <Text>Eddie Tseng</Text>
+        </Box>
+      </Flex>
+    </Box> */}
+
+    <Box mx="auto" my="auto" textAlign="center">
+      <Text fontSize={7}>Eddie Tseng</Text>
+      <Flex>
+        <Text color="#9BE2E2">&lt;</Text>
+        <Text color="#fac863">Front end Developer</Text>
+        <Text color="#9BE2E2"> /&gt;</Text>
+      </Flex>
+    </Box>
+
     {/* <Box height={["auto", "95vh", "95vh"]}> */}
     {/* <Box backgroundColor="muted" py={[5, 5, 6]} mb={[4, 4, 4]}>
       <Flex

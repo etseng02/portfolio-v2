@@ -2,8 +2,8 @@ export default {
   initialColorModeName: "dark",
   colors: {
     text: "hsl(210, 50%, 96%)",
-    background: "hsl(230, 25%, 18%)",
-    primary: "#0cf",
+    background: "#161e2e",
+    primary: "#9BE2E2",
     secondary: "hsl(0, 0%, 100%)",
     highlight: "hsl(260, 20%, 40%)",
     purple: "hsl(290, 100%, 80%)",
